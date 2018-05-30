@@ -1,0 +1,30 @@
+CREATE TABLE  IF NOT EXISTS  student(
+  id      INT PRIMARY KEY  AUTO_INCREMENT,
+  name  VARCHAR(50),
+  address  VARCHAR(50)
+);
+
+
+CREATE TABLE  IF NOT EXISTS  teacher(
+  id      INT PRIMARY KEY  AUTO_INCREMENT,
+  name  VARCHAR(50),
+  address  VARCHAR(50),
+  subject VARCHAR(50)
+);
+
+
+CREATE TABLE  IF NOT EXISTS  HIBERNATE_SEQUENCES(
+  SEQUENCE_NAME  VARCHAR(255) NOT NULL,
+  SEQUENCE_NEXT_HI_VALUE  BIGINT(19)
+);
+
+
+CREATE TABLE  IF NOT EXISTS bank_account(
+  id      INT PRIMARY KEY  AUTO_INCREMENT,
+  source_id INT,
+  sink_id INT,
+  amount  INT,
+);
+
+
+
